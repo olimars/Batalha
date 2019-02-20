@@ -1,9 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        sh 'echo \'ola\''
+        sh '''cd /home
+
+'''
       }
     }
   }
