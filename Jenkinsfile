@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sh ''' cd /home/giloliveira/Documents
+        sh '''
 
 gcc teste.c -o test.exe
 
