@@ -1,15 +1,10 @@
 pipeline {
   agent any
-  stages {
-    stage('error') {
-      steps {
-        sh '''
+ stage('Sanity check') {
+            steps {
+                input "Tudo parece ok?"
+            }
+        }
 
-gcc teste.c -o test.exe
-
-
-'''
-      }
-    }
-  }
+    
 }
