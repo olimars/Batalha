@@ -1,6 +1,6 @@
 pipeline {
   agent any
- stage('Sanity check') {
+ stage('input') {
             steps {
                 input "Tudo parece ok?"
             }
